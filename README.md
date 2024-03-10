@@ -24,3 +24,6 @@ testes serão executados através da interfase gráfica do cypress
 
 - mpn run cy:run
 testes serão executados através do terminal
+
+## gitHub action
+Configurado o gitHub action para executar os testes sempre que ocorrer um push no repositório do projeto.
