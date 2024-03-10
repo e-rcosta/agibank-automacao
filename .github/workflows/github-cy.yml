@@ -1,5 +1,5 @@
 name: CI agibanck
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+run-name: ${{ github.actor }}
 on: [push]
 jobs:
   cypress_test:
