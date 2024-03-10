@@ -4,8 +4,9 @@ on: [push]
 jobs:
   cypress_test:
     runs-on: ubuntu-22.04
-    docker:
-      - image: cypress/included:3.8.3  # Imagem Docker que contém o ambiente Cypress
+    container:
+      image: cypress/browsers:node-20.9.0-chrome-118.0.5993.88-1-ff-118.0.2-edge-118.0.2088.46-1
+      options: --user 1001
     steps:
       - name: Checkout
         uses: actions/checkout@v2
