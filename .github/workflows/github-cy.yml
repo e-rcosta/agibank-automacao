@@ -1,0 +1,13 @@
+name: CI agibanck
+run-name: ${{ github.actor }}
+on: [push]
+jobs:
+  cypress_test:
+    runs-on: ubuntu-22.04    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm install
+      - name: Run Cypress Tests
+        run: npm run cy:run
