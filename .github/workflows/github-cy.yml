@@ -3,6 +3,7 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
   cypress_test:
+    runs-on: ubuntu-22.04
     docker:
       - image: cypress/included:3.8.3  # Imagem Docker que contém o ambiente Cypress
     steps:
